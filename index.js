@@ -1,11 +1,11 @@
 //Test 1
-const returnFirstTwoDrivers = function (firstTwoDrivers){
-    return firstTwoDrivers = ['Antonia', 'Nuru']
+const returnFirstTwoDrivers = function (drivers){
+    return drivers.slice(0,2);
 }
 
 //Test 2
-const returnLastTwoDrivers = function (lastTwoDrivers){
-    return lastTwoDrivers = ['Amari', 'Mo']
+const returnLastTwoDrivers = function (drivers){
+    return drivers.slice(-2);
 }
 
 //Test 3
@@ -28,9 +28,9 @@ function fareTripler(TripleIt){
 }
 
 //Test 7
-function selectDifferentDrivers(firstTwoDrivers, returnFirstTwoDrivers){
-   return firstTwoDrivers;
+function selectDifferentDrivers(drivers, someFunction){
+   if (someFunction = returnFirstTwoDrivers)
+   return drivers.slice(0,2);
+   else if (someFunction = returnLastTwoDrivers)
+   return drivers.slice(-2);
 }
-function selectDifferentDrivers(lastTwoDrivers, returnLastTwoDrivers){
-    return lastTwoDrivers;
- }
